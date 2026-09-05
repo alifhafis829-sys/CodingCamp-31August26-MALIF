@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Greeting Section -->
+    <div class="card greeting-card">
+      <div id="clock" class="clock">10:45:22</div>
+      <div id="date" class="date">Tuesday, January 27, 2026</div>
+      <div id="greeting" class="greeting">Good Morning</div>
+    </div>
+
+    <div class="main-content">
+      <!-- Focus Timer -->
+      <div class="card timer-card">
+        <h2>Focus Timer</h2>
+        <div id="timer-display" class="timer-display">25:00</div>
+        <div class="timer-buttons">
+          <button id="start-btn" class="btn btn-blue">Start</button>
+          <button id="stop-btn" class="btn btn-gray">Stop</button>
+          <button id="reset-btn" class="btn btn-gray">Reset</button>
+        </div>
+      </div>
+
+      <!-- Tasks -->
+      <div class="card tasks-card">
+        <h2>Tasks</h2>
+        <form id="todo-form" class="input-group">
+          <input type="text" id="todo-input" placeholder="Add a new task..." required>
+          <button type="submit" class="btn btn-blue">Add</button>
+        </form>
+        <p id="todo-error" class="error-msg"></p>
+        <ul id="todo-list" class="todo-list"></ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="card links-card">
+        <h2>Quick Links</h2>
+        <form id="link-form" class="input-group">
+          <input type="text" id="link-name" placeholder="Link name" required>
+          <input type="url" id="link-url" placeholder="URL" required>
+          <button type="submit" class="btn btn-blue">Add Link</button>
+        </form>
+        <div id="links-container" class="links-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
